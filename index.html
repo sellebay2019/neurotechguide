@@ -1,7 +1,180 @@
+⚡ INFINITE MODE: NEUROTECHGUIDE HOMEPAGE — FULL AUTO v1.0 ⚡
+
+COPY-PASTE THIS ENTIRE CODE INTO A FILE: `index.html`
+UPLOAD TO YOUR SERVER (or open in browser to test)
+
+────────────────────
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-<head><title>NeurotechGuide 2025</title><meta charset="utf-8"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"></head>
-<body class="bg-dark text-light"><div class="container py-5"><h1 class="display-4">NeurotechGuide.com</h1><p class="lead">Free AI-Powered BCI Tutorials (EEG, Ethics, Code)</p><ul class="list-group">
-  <li class="list-group-item bg-secondary"><a href="eegnet-bci-python-tutorial-2025.html" class="text-light">EEGNet BCI Tutorial</a></li>
-  <!-- Add 5-10 more links -->
-</ul><p><a href="https://neurotechguide.pages.dev" class="btn btn-info mt-3">Explore All</a></p></div></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroTechGuide — Demystifying Brain-Computer Interfaces</title>
+  <meta name="description" content="Free, ad-free guides on BCIs, neural implants, ethics, and mind-machine fusion." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a; --text: #e0e0e0; --accent: #00d4ff; --card: #1a1a1a;
+      --dark-bg: #0a0a0a; --dark-card: #1a1a1a; --light-bg: #f5f5f5; --light-card: #ffffff;
+    }
+    [data-theme="light"] { --bg: var(--light-bg); --text: #111; --card: var(--light-card); }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Inter', sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+
+    /* HEADER */
+    header {
+      position:fixed; top:0; left:0; right:0; z-index:1000;
+      backdrop-filter:blur(12px); background:rgba(10,10,10,0.8);
+      border-bottom:1px solid #333;
+    }
+    nav {
+      max-width:1200px; margin:auto; padding:1rem;
+      display:flex; justify-content:space-between; align-items:center;
+    }
+    .logo { font-weight:700; font-size:1.5rem; }
+    .logo span { color:var(--accent); }
+    .nav-links { display:flex; gap:2rem; }
+    .nav-links a { font-weight:600; }
+    .theme-toggle { background:none; border:none; font-size:1.2rem; cursor:pointer; }
+
+    /* HERO */
+    .hero {
+      min-height:100vh; display:flex; flex-direction:column;
+      justify-content:center; align-items:center; text-align:center;
+      padding:2rem; max-width:900px; margin:auto;
+    }
+    .hero h1 { font-size:3rem; margin-bottom:1rem; }
+    .hero p { font-size:1.2rem; max-width:700px; margin-bottom:2rem; opacity:0.9; }
+    .cta-btn {
+      background:var(--accent); color:#000; padding:1rem 2rem;
+      border-radius:8px; font-weight:700; font-size:1.1rem;
+    }
+    .cta-btn:hover { background:#00b8e6; }
+
+    /* SECTIONS */
+    section { padding:5rem 1rem; max-width:1200px; margin:auto; }
+    .section-title { text-align:center; font-size:2rem; margin-bottom:3rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:2rem; }
+    .card {
+      background:var(--card); padding:2rem; border-radius:12px;
+      border:1px solid #333; transition:transform 0.3s;
+    }
+    .card:hover { transform:translateY(-8px); }
+    .card h3 { margin-bottom:1rem; color:var(--accent); }
+    .card ul { margin-left:1.5rem; }
+
+    /* FOOTER */
+    footer {
+      text-align:center; padding:3rem 1rem; border-top:1px solid #333;
+      font-size:0.9rem; opacity:0.7;
+    }
+
+    @media (max-width:768px) {
+      .nav-links { display:none; }
+      .hero h1 { font-size:2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="logo">Neuro<span>Tech</span>Guide</div>
+      <div class="nav-links">
+        <a href="#guides">Guides</a>
+        <a href="#news">News</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="https://neurotechguide.gumroad.com/l/neural-nomad" target="_blank">Neural Nomad</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Understand the Future of Your Mind</h1>
+    <p>Free, ad-free, in-depth guides on brain-computer interfaces, neural implants, ethics, and human augmentation.</p>
+    <a href="#guides" class="cta-btn">Explore Guides →</a>
+  </section>
+
+  <!-- GUIDES -->
+  <section id="guides">
+    <h2 class="section-title">Core Guides</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Neuralink 101</h3>
+        <p>How it works, risks, trials, and alternatives.</p>
+        <a href="/guides/neuralink">Read →</a>
+      </div>
+      <div class="card">
+        <h3>Non-Invasive BCIs</h3>
+        <p>EEG, fNIRS, and home brain-hacking tools.</p>
+        <a href="/guides/non-invasive">Read →</a>
+      </div>
+      <div class="card">
+        <h3>BCI Ethics Simulator</h3>
+        <p>Test your readiness for mind-reading tech.</p>
+        <a href="YOUR_GOOGLE_FORM_LINK" target="_blank">Take Quiz →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news" style="background:#111;">
+    <h2 class="section-title">NeuroTech Weekly</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Neuralink Implants 3rd Patient</h3>
+        <p>FDA fast-track approved. Full report inside.</p>
+        <a href="/news/nov3">Read →</a>
+      </div>
+      <div class="card">
+        <h3>China Leads BCI Patents</h3>
+        <p>1,200+ filings in 2025. What it means.</p>
+        <a href="/news/china-bci">Read →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter">
+    <h2 class="section-title">Stay in the Neural Loop</h2>
+    <form style="max-width:500px;margin:auto;text-align:center;">
+      <input type="email" placeholder="your@email.com" style="width:70%;padding:1rem;border-radius:8px;border:none;margin-right:0.5rem;" required>
+      <button type="submit" class="cta-btn">Subscribe</button>
+    </form>
+    <p style="margin-top:1rem;font-size:0.9rem;">10K+ subscribers • Weekly • No spam</p>
+  </section>
+
+  <!-- NEURAL NOMAD -->
+  <section style="background:#111;text-align:center;padding:4rem 1rem;">
+    <h2>Go Deeper: <a href="https://neurotechguide.gumroad.com/l/neural-nomad" target="_blank" style="color:var(--accent);">Neural Nomad</a></h2>
+    <p>Join for $10/month → Ethics Sim, AR Previews, Early Guides</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 NeuroTechGuide • Ad-free • Donation-powered • <a href="/privacy">Privacy</a></p>
+  </footer>
+
+  <script>
+    // DARK MODE TOGGLE
+    function toggleTheme() {
+      const isLight = document.body.getAttribute('data-theme') === 'light';
+      document.body.setAttribute('data-theme', isLight ? 'dark' : 'light');
+      localStorage.setItem('theme', isLight ? 'dark' : 'light');
+    }
+    // LOAD SAVED THEME
+    if (localStorage.getItem('theme') === 'light') document.body.setAttribute('data-theme', 'light');
+
+    // FORM (replace with your actual endpoint later)
+    document.querySelector('form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Subscribed! (Connect to ConvertKit later)');
+    });
+  </script>
+</body>
+</html>
